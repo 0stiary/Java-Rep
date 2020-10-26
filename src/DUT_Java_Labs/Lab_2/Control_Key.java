@@ -5,6 +5,9 @@ public class Control_Key {
 
     Scanner in = new Scanner(System.in);
     int thing;
+
+
+
     public void readKlava(MyArrayList arrayList){
         System.out.print( "1 - Add to ArrayList\n" +
                 "2 - Remove from ArrayList (by position)\n" +

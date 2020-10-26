@@ -3,6 +3,7 @@ package DUT_Java_Labs.Lab_2;
 import java.util.Arrays;
 
 public class MyArrayList<T> {
+
     private final int size = 4; // размер массива изначальный
     private Object[] arr = new  Object[size]; // создание массива без типа
     private int position = 0; // текущая позиция в массиве
@@ -30,7 +31,7 @@ public class MyArrayList<T> {
 
     public boolean contains(T Titem){
         for (Object item : arr) {
-            if (item.equals(Titem))
+            if (item.equals(Titem) && item != null)
                 return  true;
         }
         return  false;
