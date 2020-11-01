@@ -1,8 +1,9 @@
 package DUT_Java_Labs.Lab_2;
 
+import java.io.Serializable;
 import java.util.Arrays;
 
-public class MyArrayList<T> {
+public class MyArrayList<T> implements Serializable {
 
     private final int size = 4; // размер массива изначальный
     private Object[] arr = new  Object[size]; // создание массива без типа

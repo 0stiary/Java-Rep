@@ -1,6 +1,8 @@
 package DUT_Java_Labs.Lab_2_1;
 
-public class MyLinkedList<T> {
+import java.io.Serializable;
+
+public class MyLinkedList<T> implements Serializable {
 
     private Node head;
     private Node tail;
@@ -90,7 +92,7 @@ public class MyLinkedList<T> {
         N = 0;
     };
 
-    private class Node{
+    private class Node implements Serializable{
         private T data;
         private Node next;
 

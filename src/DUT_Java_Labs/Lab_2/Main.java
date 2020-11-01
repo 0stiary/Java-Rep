@@ -6,9 +6,11 @@ public class Main {
 
     public static void main(String[] args) {
 
-        MyArrayList arrayList = new MyArrayList();
-        MyLinkedList linkedList = new MyLinkedList();
+        SerializtionUtil util = new SerializtionUtil();
+        //MyArrayList arrayList = new MyArrayList();
+        MyArrayList arrayList = util.deserialization();
         Control_Key controlKey  = new Control_Key(arrayList);
+        //util.serializtion(arrayList);
 
     }
 
